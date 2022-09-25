@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+body {
+    background-color:antiquewhite ;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:rgb(218, 66, 116) ;
+}
+
+.koostisosad {
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    color: rgb(48, 38, 38);
+    position: relative;
+    animation: koostis;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes koostis {
+    0% {top: -250px}
+    100% {top: 5px}
+}
+
+.koostisosad-table {
+    margin: 0 auto
+}
+
+table {
+    border: 1px solid gray;
+}
+
+h2 {
+    opacity: 0;
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(48, 38, 38);
+    animation: valmistamine;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes valmistamine {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(48, 38, 38);
+}
+
+.valmistamine {
+    font-family: 'Roboto', sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    color: rgb(48, 38, 38);
+}
+
+.valmistamine ol {
+    margin: 0 auto;
+    width: 75%;
+    padding-bottom: 20px;
+}
+
+.koogid {
+    opacity: 0;
+    animation: koogid;
+    animation-duration: 4s;
+    position: relative;
+    animation-delay: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes koogid {
+    0% {opacity: 0; left: -2000px;}
+    85% {opacity: 1; left: 50px;}
+    100% {opacity: 1; left: 0;}
+}
+
+.kreem {
+    opacity: 0;
+    animation: kreem;
+    animation-duration: 4s;
+    position: relative;
+    animation-delay: 4s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes kreem {
+    0% {opacity: 0; right: -2000px;}
+    85% {opacity: 1; right: 50px;}
+    100% {opacity: 1; right: 0;}
+}
+
+.pilt {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding-bottom: 30px;
+    opacity: 0;
+    animation: img;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes img {
+    0% {opacity: 0;} /*0 - 1*/
+    100% {opacity: 1;}
+}
+
+.link {
+    text-align: center;
+}
+
+a {
+    color: palevioletred;
+}
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(48, 38, 38);
+}
